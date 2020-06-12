@@ -1,6 +1,6 @@
-# Foobar
+# Assessment
 
-Assessment: Rolling Dice
+Rolling Dice
 
 ## URL
 
