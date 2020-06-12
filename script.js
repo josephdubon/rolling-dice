@@ -15,9 +15,6 @@ for (let i = 1; i <= 1000; i++) {
     // Get sum of 2 dice
     let rollOfDice = rollOfDice1 + rollOfDice2
 
-    // Increment count
-    count[rollOfDice] = count[rollOfDice] + 1
-
     // Create a div, with class "bar", and set the width to 100px.
     let newElement = document.createElement("div");
     newElement.className = "bar";
