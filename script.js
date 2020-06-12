@@ -1,7 +1,7 @@
 console.log("Hello World.")
 
 // Initialize array and fill it with zeros
-count = [0, 0, 0, 0, 0]
+count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Loop through results 1000 times
 for (let i = 1; i <= 1000; i++) {
@@ -15,10 +15,12 @@ for (let i = 1; i <= 1000; i++) {
     // Get sum of 2 dice
     let rollOfDice = rollOfDice1 + rollOfDice2
 
-    // Create a div, with class "bar", and set the width to 100px.
+    count[rollOfDice] = count[rollOfDice] + 1;
+
+    // Create a div, with class "bar", and set the width to 75px.
     let newElement = document.createElement("div");
     newElement.className = "bar";
-    newElement.style.width = rollOfDice * 100 + "px";
+    newElement.style.width = rollOfDice * 75 + "px";
 
     // Place a text label inside the new div.
     var newText = document.createTextNode("Dice Roll #" + i + " " + "Equals " + rollOfDice);
