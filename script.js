@@ -1,7 +1,7 @@
 console.log("Hello World.")
 
 // Initialize array and fill it with zeros
-count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 // Loop through results 1000 times
 for (let i = 1; i <= 1000; i++) {
@@ -15,6 +15,7 @@ for (let i = 1; i <= 1000; i++) {
     // Get sum of 2 dice
     let rollOfDice = rollOfDice1 + rollOfDice2
 
+    // Save frequency of results to count array
     count[rollOfDice] = count[rollOfDice] + 1;
 
     // Create a div, with class "bar", and set the width to 75px.
@@ -30,3 +31,5 @@ for (let i = 1; i <= 1000; i++) {
     let destination = document.getElementById("d1")
     destination.appendChild(newElement)
 }
+
+console.log(count)
