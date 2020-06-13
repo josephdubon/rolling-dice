@@ -19,6 +19,7 @@ for (let i = 0; i <= 1000; i++) {
     count[rollOfDice] = count[rollOfDice] + 1;
 }
 
+// Send results to HTML with a bar graph
 for (let i = 2; i < count.length; i++) {
     // Create a div, with class "bar", and set the width to 100px.
     let newElement = document.createElement("div")
