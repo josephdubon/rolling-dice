@@ -18,15 +18,15 @@ for (let i = 1; i <= 1000; i++) {
     count[rollOfDice] = count[rollOfDice] + 1;
 
     // Create a div, with class "bar", and set the width to 75px.
-    let newElement = document.createElement("div");
-    newElement.className = "bar";
-    newElement.style.width = rollOfDice * 75 + "px";
+    let newElement = document.createElement("div")
+    newElement.className = "bar"
+    newElement.style.width = rollOfDice * 75 + "px"
 
     // Place a text label inside the new div.
-    var newText = document.createTextNode("Dice Roll #" + i + " " + "Equals " + rollOfDice);
-    newElement.appendChild(newText);
+    let newText = document.createTextNode("Dice Roll #" + i + " " + "Equals " + rollOfDice)
+    newElement.appendChild(newText)
 
     // Put the new div on the page inside the existing element "d1".
-    var destination = document.getElementById("d1");
-    destination.appendChild(newElement);
+    let destination = document.getElementById("d1")
+    destination.appendChild(newElement)
 }
