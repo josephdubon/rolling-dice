@@ -1,5 +1,6 @@
 .bar {
     background: rgb(7, 61, 78);
+    width: 50px;
     height: 25px;
     margin-bottom: 10px;
     color: white;
