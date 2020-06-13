@@ -23,10 +23,10 @@ for (let i = 2; i < count.length; i++) {
     // Create a div, with class "bar", and set the width to 100px.
     let newElement = document.createElement("div")
     newElement.className = "bar"
-    newElement.style.width = count[i] * 1 + "px"
+    newElement.style.width = count[i] * 2.5 + "px"
     
     // Place a text label inside the new div.
-    let newText = document.createTextNode(i + ": ")
+    let newText = document.createTextNode(i + ": " + count[i])
     newElement.appendChild(newText)
 
     // Put the new div on the page inside the existing element "d1".
